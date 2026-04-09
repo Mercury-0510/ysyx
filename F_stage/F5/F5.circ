@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project source="4.0.0" version="1.0">
-  This file is intended to be loaded by Logisim-evolution v4.0.0(https://github.com/logisim-evolution/).
+<project source="4.1.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v4.1.0(https://github.com/logisim-evolution/).
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
@@ -20,9 +20,10 @@
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2"/>
   <lib desc="#Arithmetic" name="3"/>
-  <lib desc="#Memory" name="4"/>
-  <lib desc="#I/O" name="5"/>
-  <lib desc="#Base" name="6">
+  <lib desc="#FPArithmetic" name="4"/>
+  <lib desc="#Memory" name="5"/>
+  <lib desc="#I/O" name="6"/>
+  <lib desc="#Base" name="7">
     <tool name="Text Tool">
       <a name="font" val="SansSerif plain 12"/>
     </tool>
@@ -34,14 +35,14 @@
     <a name="simrand" val="0"/>
   </options>
   <mappings>
-    <tool lib="6" map="Button2" name="Menu Tool"/>
-    <tool lib="6" map="Button3" name="Menu Tool"/>
-    <tool lib="6" map="Ctrl Button1" name="Menu Tool"/>
+    <tool lib="7" map="Button2" name="Menu Tool"/>
+    <tool lib="7" map="Button3" name="Menu Tool"/>
+    <tool lib="7" map="Ctrl Button1" name="Menu Tool"/>
   </mappings>
   <toolbar>
-    <tool lib="6" name="Poke Tool"/>
-    <tool lib="6" name="Edit Tool"/>
-    <tool lib="6" name="Text Tool">
+    <tool lib="7" name="Poke Tool"/>
+    <tool lib="7" name="Edit Tool"/>
+    <tool lib="7" name="Text Tool">
       <a name="font" val="SansSerif plain 12"/>
     </tool>
     <sep/>
@@ -139,31 +140,31 @@
     <comp lib="3" loc="(280,130)" name="Adder">
       <a name="width" val="4"/>
     </comp>
-    <comp lib="4" loc="(140,190)" name="Register">
+    <comp lib="5" loc="(140,190)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
       <a name="label" val="PC"/>
       <a name="width" val="4"/>
     </comp>
-    <comp lib="4" loc="(280,190)" name="ROM">
+    <comp lib="5" loc="(280,190)" name="ROM">
       <a name="addrWidth" val="4"/>
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 4 8
 8b 90 a1 b1 16 2b d2 dd
 </a>
     </comp>
-    <comp lib="4" loc="(750,140)" name="Register">
+    <comp lib="5" loc="(750,140)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
       <a name="label" val="R0"/>
     </comp>
-    <comp lib="4" loc="(750,220)" name="Register">
+    <comp lib="5" loc="(750,220)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
       <a name="label" val="R1_Sum"/>
     </comp>
-    <comp lib="4" loc="(750,300)" name="Register">
+    <comp lib="5" loc="(750,300)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
       <a name="label" val="R2_Cnt"/>
     </comp>
-    <comp lib="4" loc="(750,380)" name="Register">
+    <comp lib="5" loc="(750,380)" name="Register">
       <a name="appearance" val="logisim_evolution"/>
       <a name="label" val="R3_Cst"/>
     </comp>
