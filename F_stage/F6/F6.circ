@@ -67,11 +67,10 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="2048000.0"/>
-    <comp lib="0" loc="(150,240)" name="Pin">
+    <comp lib="0" loc="(230,220)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="EN"/>
     </comp>
-    <comp lib="0" loc="(180,200)" name="Power"/>
     <comp lib="0" loc="(230,260)" name="Clock">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="clk"/>
@@ -313,7 +312,6 @@
       <a name="facing" val="north"/>
       <a name="size" val="30"/>
     </comp>
-    <comp lib="1" loc="(250,200)" name="OR Gate"/>
     <comp lib="1" loc="(700,1050)" name="AND Gate">
       <a name="facing" val="west"/>
       <a name="size" val="30"/>
@@ -323,6 +321,10 @@
     </comp>
     <comp lib="1" loc="(730,360)" name="OR Gate">
       <a name="facing" val="west"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="1" loc="(780,1710)" name="NOT Gate"/>
+    <comp lib="1" loc="(830,1720)" name="AND Gate">
       <a name="size" val="30"/>
     </comp>
     <comp lib="2" loc="(1040,270)" name="Multiplexer">
@@ -9519,8 +9521,8 @@ f3f5f9 c4d0e1 15*b5c4d9 d6deea 114*f5f7fa f4f6f9 f5f7fa fefeff
       <a name="height" val="256"/>
       <a name="width" val="256"/>
     </comp>
-    <comp lib="9" loc="(360,95)" name="Text">
-      <a name="text" val="add, addi, lui, lw, lbu, sw, sb, jalr"/>
+    <comp lib="9" loc="(276,123)" name="Text">
+      <a name="text" val="RV32I with 16 registers and Inst: add, addi, lui, lw, lbu, sw, sb, jalr"/>
     </comp>
     <comp loc="(1030,370)" name="Immediate"/>
     <comp loc="(1090,170)" name="Registers"/>
@@ -9554,19 +9556,16 @@ f3f5f9 c4d0e1 15*b5c4d9 d6deea 114*f5f7fa f4f6f9 f5f7fa fefeff
     <wire from="(1230,260)" to="(1230,310)"/>
     <wire from="(1230,310)" to="(1230,420)"/>
     <wire from="(1240,180)" to="(1240,410)"/>
-    <wire from="(150,220)" to="(150,240)"/>
-    <wire from="(150,220)" to="(200,220)"/>
     <wire from="(160,1070)" to="(160,1680)"/>
     <wire from="(160,1070)" to="(660,1070)"/>
     <wire from="(160,1680)" to="(210,1680)"/>
-    <wire from="(180,200)" to="(200,200)"/>
     <wire from="(200,1600)" to="(200,1610)"/>
-    <wire from="(200,180)" to="(200,200)"/>
     <wire from="(210,1600)" to="(210,1620)"/>
     <wire from="(210,1660)" to="(210,1680)"/>
     <wire from="(220,1600)" to="(220,1630)"/>
     <wire from="(230,1660)" to="(230,1770)"/>
     <wire from="(230,1770)" to="(720,1770)"/>
+    <wire from="(230,220)" to="(250,220)"/>
     <wire from="(230,260)" to="(250,260)"/>
     <wire from="(230,290)" to="(240,290)"/>
     <wire from="(240,1600)" to="(240,1660)"/>
@@ -9575,7 +9574,7 @@ f3f5f9 c4d0e1 15*b5c4d9 d6deea 114*f5f7fa f4f6f9 f5f7fa fefeff
     <wire from="(240,290)" to="(260,290)"/>
     <wire from="(250,1600)" to="(250,1670)"/>
     <wire from="(250,1670)" to="(350,1670)"/>
-    <wire from="(250,200)" to="(250,250)"/>
+    <wire from="(250,220)" to="(250,250)"/>
     <wire from="(250,250)" to="(320,250)"/>
     <wire from="(250,260)" to="(250,390)"/>
     <wire from="(250,260)" to="(290,260)"/>
@@ -9665,13 +9664,18 @@ f3f5f9 c4d0e1 15*b5c4d9 d6deea 114*f5f7fa f4f6f9 f5f7fa fefeff
     <wire from="(70,400)" to="(70,1610)"/>
     <wire from="(700,1710)" to="(720,1710)"/>
     <wire from="(720,1710)" to="(720,1770)"/>
+    <wire from="(720,1710)" to="(750,1710)"/>
     <wire from="(730,1040)" to="(740,1040)"/>
     <wire from="(730,1060)" to="(840,1060)"/>
     <wire from="(740,1020)" to="(740,1040)"/>
     <wire from="(760,350)" to="(800,350)"/>
     <wire from="(760,370)" to="(810,370)"/>
+    <wire from="(780,1710)" to="(800,1710)"/>
     <wire from="(790,140)" to="(790,490)"/>
     <wire from="(790,140)" to="(820,140)"/>
+    <wire from="(790,1730)" to="(790,1750)"/>
+    <wire from="(790,1730)" to="(800,1730)"/>
+    <wire from="(790,1750)" to="(840,1750)"/>
     <wire from="(790,530)" to="(920,530)"/>
     <wire from="(790,540)" to="(920,540)"/>
     <wire from="(790,550)" to="(920,550)"/>
@@ -9704,11 +9708,12 @@ f3f5f9 c4d0e1 15*b5c4d9 d6deea 114*f5f7fa f4f6f9 f5f7fa fefeff
     <wire from="(820,460)" to="(820,570)"/>
     <wire from="(820,460)" to="(860,460)"/>
     <wire from="(830,110)" to="(830,150)"/>
+    <wire from="(830,1720)" to="(900,1720)"/>
     <wire from="(830,400)" to="(1080,400)"/>
     <wire from="(830,400)" to="(830,590)"/>
     <wire from="(840,100)" to="(840,160)"/>
+    <wire from="(840,1060)" to="(840,1750)"/>
     <wire from="(840,510)" to="(840,1060)"/>
-    <wire from="(840,510)" to="(920,510)"/>
     <wire from="(850,190)" to="(850,200)"/>
     <wire from="(850,190)" to="(990,190)"/>
     <wire from="(850,260)" to="(860,260)"/>
@@ -9722,6 +9727,8 @@ f3f5f9 c4d0e1 15*b5c4d9 d6deea 114*f5f7fa f4f6f9 f5f7fa fefeff
     <wire from="(890,470)" to="(920,470)"/>
     <wire from="(900,240)" to="(900,300)"/>
     <wire from="(900,300)" to="(1010,300)"/>
+    <wire from="(900,510)" to="(900,1720)"/>
+    <wire from="(900,510)" to="(920,510)"/>
     <wire from="(910,170)" to="(910,570)"/>
     <wire from="(910,170)" to="(990,170)"/>
     <wire from="(910,570)" to="(920,570)"/>
