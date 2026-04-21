@@ -1,3 +1,11 @@
+# Generated Logisim artifacts
 F_stage/F3/F3.circ
 F_stage/F4/F4.circ
 F_stage/F6/logisim-bin
+
+# E1 local editor/debug/build artifacts
+E_stage/E1/.codex
+E_stage/E1/.gdb_history
+E_stage/E1/.nvimlog
+E_stage/E1/a.out
+E_stage/E1/test
