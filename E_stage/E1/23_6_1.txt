@@ -1,0 +1,10 @@
+const修饰它右侧的标识，如果右侧没有东西就修饰左边的  
+
+  const char **p
+  // p -> pointer -> pointer -> const char
+
+  char *const *p
+  // p -> pointer -> const pointer -> char
+
+  char **const p
+  // p -> const pointer -> pointer -> cha
