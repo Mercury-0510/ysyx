@@ -3,6 +3,9 @@ F_stage/F3/F3.circ
 F_stage/F4/F4.circ
 F_stage/F6/logisim-bin
 
+# Codex local session marker
+/.codex
+
 # E1 local editor/debug/build artifacts
 E_stage/E1/.codex
 E_stage/E1/.gdb_history
